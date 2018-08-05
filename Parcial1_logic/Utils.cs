@@ -77,5 +77,12 @@ namespace Parcial1_logic
 
             return result;
         }
+
+        public static float Clamp(this float baseNum, float min, float max)
+        {
+            return (baseNum < min) ? min :
+                (baseNum > max) ? max :
+                baseNum;
+        }
     }
 }

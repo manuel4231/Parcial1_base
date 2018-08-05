@@ -44,11 +44,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="OOP\Actor.cs" />
+    <Compile Include="OOP\Armor.cs" />
     <Compile Include="OOP\Enemy.cs" />
     <Compile Include="OOP\Hero.cs" />
     <Compile Include="OOP\ICharacter.cs" />
     <Compile Include="OOP\Gear.cs" />
+    <Compile Include="OOP\MovementType.cs" />
     <Compile Include="OOP\NPC.cs" />
+    <Compile Include="OOP\OOPTest.cs" />
     <Compile Include="OOP\Weapon.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TestObject.cs" />

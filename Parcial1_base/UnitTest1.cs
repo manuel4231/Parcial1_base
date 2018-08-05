@@ -20,7 +20,7 @@ namespace Parcial1_logic.Tests
 
         private readonly Queue<char> testQueue07 = new Queue<char>(new[] { 'a', 'A', 'd', '*', '\n' });
 
-        private readonly Queue<int> replacedQueue01 = new Queue<int>(new[] { 10, 5, 2, 4, 5 });
+        private readonly Queue<int> replacedQueue01 = new Queue<int>(new[] { 5, 4, 2, 5, 10 });
         private readonly Queue<int> replacedQueue02 = new Queue<int>(new[] { 5, 200, 5, 9, 5, 96547 });
         private readonly Queue<int> replacedQueue03 = new Queue<int>(new[] { 99, 4000, 0, 68, 104, 0, 462, 120 });
 
@@ -28,12 +28,13 @@ namespace Parcial1_logic.Tests
         private readonly Stack<string> testStack02 = new Stack<string>(new[] { "simpson", "cosme", "peranito" });
         private readonly Stack<string> testStack03 = new Stack<string>(new[] { "sesuponequeestonofunciona" });
 
-        private readonly Stack<string> invertedStack02 = new Stack<string>(new[] { "seikendensetsu", "nocancelenpofavo", "sophia", "perder", "genérico", "hola" });
+        private readonly Stack<string> invertedStack01 = new Stack<string>(new[] { "sesuponequeestonofunciona" });
+        private readonly Stack<string> invertedStack02 = new Stack<string>(new[] { "seikendensetsu", "nocancelenpofavo", "sophia", "perder", "generico", "hola" });
         private readonly Stack<string> invertedStack03 = new Stack<string>(new[] { "fulanito", "cosme", "simpson" });
 
-        private readonly List<string> mixedList01 = new List<string>() { "hola", "hola", "genérico", "mundo", "perder", "examen" };
+        private readonly List<string> mixedList01 = new List<string>() { "seikendensetsu", "hola", "nocancelenpofavo", "mundo", "sophia", "examen", "perder", "upb", "generico", "scripting" };
         private readonly List<string> mixedList02 = new List<string>() { "sesuponequeestonofunciona", "mañana" };
-        private readonly List<string> mixedList03 = new List<string>() { "simpson", "5", "cosme", "4", "peranito", "2" };
+        private readonly List<string> mixedList03 = new List<string>() { "peranito", "5", "cosme", "4", "simpson", "2" };
 
         private readonly Dictionary<int, string> testDict01 = new Dictionary<int, string>()
         {
@@ -88,7 +89,7 @@ namespace Parcial1_logic.Tests
         {
             CollectionAssert.AreEqual(invertedStack02, to.InverseStack(testStack01));
             CollectionAssert.AreNotEqual(invertedStack03, to.InverseStack(testStack02));
-            CollectionAssert.AreEqual(testStack03, to.InverseStack(testStack03));
+            CollectionAssert.AreEqual(invertedStack01, to.InverseStack(testStack03));
         }
 
         [TestMethod()]
@@ -111,17 +112,7 @@ namespace Parcial1_logic.Tests
 
         #region BONUS
 
-        [TestMethod()]
-        public void QueueToStringTest()
-        {
-            //Assert.AreEqual("");
-        }
-
-        [TestMethod()]
-        public void QueueToStringTest1()
-        {
-            Assert.Fail();
-        }
+        //
 
         #endregion BONUS
     }

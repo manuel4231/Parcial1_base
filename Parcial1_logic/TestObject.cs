@@ -16,7 +16,7 @@ namespace Parcial1_logic
 
         /*
          * Esta sección del examen evalúa el dominio de las estructuras de datos lineales básicas.
-         * VALOR: 2.5 (0.5 cada ejercicio)
+         * VALOR: 2.5 (0.625 cada ejercicio)
          */
 
         /// <summary>
@@ -31,20 +31,8 @@ namespace Parcial1_logic
         public Queue<int> ReplaceInQueue(Queue<int> inputQueue, int lookupValue, int replaceValue)
         {
             //NOTA: Para la solución NO SE PERMITE USAR el método ToArray().
-            //Asuma que T es el tipo de datos
 
             return null;
-        }
-
-        /// <summary>
-        /// Realiza la búsqueda binaria del número 'lookupValue' en la lista 'list'
-        /// </summary>
-        /// <param name="list"></param>
-        /// <param name="lookupValue"></param>
-        /// <returns>'True' si 'lookupValue' está en la lista; 'False' de otro modo</returns>
-        public bool FoundWithBinarySearch(List<int> list, int lookupValue)
-        {
-            return false;
         }
 
         /// <summary>
@@ -54,6 +42,7 @@ namespace Parcial1_logic
         /// <returns>Una pila con los valores de 'stack' invertidos</returns>
         public Stack<string> InverseStack(Stack<string> stack)
         {
+            //NOTA: Para la solución NO SE PERMITE USAR el método ToArray().
             return null;
         }
 
@@ -66,6 +55,7 @@ namespace Parcial1_logic
         /// <returns>Una lista con datos intercalados de 'stack' y 'queue'</returns>
         public List<string> MixData(Stack<string> stack, Queue<string> queue)
         {
+            //NOTA: Para la solución NO SE PERMITE USAR el método ToArray().
             return null;
         }
 
