@@ -2,5 +2,6 @@
 {
     public class Gear
     {
+        public float paramMod;
     }
 }

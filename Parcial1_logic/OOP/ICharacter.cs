@@ -2,5 +2,6 @@
 {
     public interface ICharacter
     {
+        void Move(MovementType tipo);
     }
 }
