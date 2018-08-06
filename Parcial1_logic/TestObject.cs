@@ -32,7 +32,23 @@ namespace Parcial1_logic
         {
             //NOTA: Para la solución NO SE PERMITE USAR el método ToArray().
 
-            return null;
+            Queue<int> outputQueue = new Queue<int>();
+
+            int items = inputQueue.Count;
+            for (int i = 0; i < items ; i++)
+            {
+                if (inputQueue.Peek() == lookupValue)
+                {
+                    outputQueue.Enqueue(replaceValue);
+                    inputQueue.Dequeue();
+                }
+                else
+                {
+                    outputQueue.Enqueue(inputQueue.Peek());
+                    inputQueue.Dequeue();
+                }
+            }
+            return outputQueue;
         }
 
         /// <summary>
@@ -43,7 +59,15 @@ namespace Parcial1_logic
         public Stack<string> InverseStack(Stack<string> stack)
         {
             //NOTA: Para la solución NO SE PERMITE USAR el método ToArray().
-            return null;
+
+            Stack<string> stackInversa = new Stack<string>();
+            int items = stack.Count;
+            for (int i = 0; i < items; i++)
+            {
+                stackInversa.Push(stack.Pop());
+            }
+
+            return stackInversa;
         }
 
         /// <summary>
@@ -56,7 +80,31 @@ namespace Parcial1_logic
         public List<string> MixData(Stack<string> stack, Queue<string> queue)
         {
             //NOTA: Para la solución NO SE PERMITE USAR el método ToArray().
-            return null;
+
+            List<string> mixData = new List<String>();
+
+            int items = stack.Count + queue.Count;
+
+
+            while(items > 1)
+            {
+                if (stack.Count != 0)
+                {
+                    mixData.Add(stack.Pop());
+                    items--;
+                }
+                else
+                    break;
+                if (queue.Count != 0)
+                {
+                    mixData.Add(queue.Dequeue());
+                    items--;
+                }
+                else
+                    break;
+            }
+
+            return mixData;
         }
 
         /// <summary>
