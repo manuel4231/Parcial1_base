@@ -1,0 +1,17 @@
+Feedback:
+
+1. Estructuras de datos (1.88 / 2.5)
+ * Las pruebas de los algoritmos pasan exitosamente.
+ * No se presenta solución para RepeatedTimesInDictionary()
+ * En ReplaceInQueue() no es necesario hacer Peek(). Basta con guardar el dato tras el Dequeue() y procesarlo.
+ * Muy creativa la solución para MixData(), considerando que la cantidad de items que pretende meter en la colección es la suma de ambos tamaños de las colecciones de entrada, pero funciona.
+
+2. OOP (1.5/2.5)
+ * No se define el método Move() en Actor.cs, necesario por implementar la interfaz ICharacter.
+ * ICharacter.Move() no necesita un parámetro. El valor a retornar termina siendo el mismo que entra como parámetro. La solución presentada no satisface el enunciado, y tampoco hace uso del parámetro recibido.
+ * Buen uso del operador 'is'. Sin embargo, el método Hero.Equip() no cumple con el pedido, que es equipar un Gear. Sin embargo, lo que hace es cambiar los atributos de la instancia. Además, la forma en como está escrito el código hace que se valide un 'if' probablemente inalcanzable si el parámetro que recibe Hero.Equip() es una instancia de Weapon. 
+ * No se presentan los accesores para Actor.CurrentAtk y Actor.CurrentDef.
+ * Gear no está definido como una clase abstracta. Según el enunciado, los únicos Gear que pueden existir con Weapon y Armor.
+ * ParamMod solo afecta a la instancia de Gear que la aplique. No a todos los Gear.
+ 
+ Total: 3.38/5
